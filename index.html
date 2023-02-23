@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/bdd5a51025.js" crossorigin="anonymous"></script>
+    <script type="module" src="main.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="container borderisgreen">
+        <h1>File Converter</h1>
+        <!-- form start -->
+        <form class="borderisred">
+          <div id="dropZone" class="drop-zone">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            
+            <span class="drop-zone__prompt">Drag&Drop file here</span>
+            
+            <span>or</span>
+            
+            <input
+              type="file"
+              id="inputFile"
+              class="drop-zone__input"
+              accept=".csv, .pdf, .doc, .docx, .xls, .xlsx"
+            />
+          </div>
+          <br />
+          <div id="selectAndBtn" class="borderisred">
+            <p>Select the output format:</p>
+            <select
+              class="form-select w-50"
+              aria-label="Default select example">
+              <option selected>Select one of the options</option>
+              <option value="1">PDF</option>
+              <option value="2">Word</option>
+              <option value="3">Excel</option>
+              <option value="4">CSV</option>
+            </select>
+            <br />
+            <button type="button" id="convertBtn" class="btn btn-success">
+              Convert
+            </button>
+          </div>
+        </form>
+        <!-- form end -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
